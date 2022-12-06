@@ -12,7 +12,6 @@ for (let i = 0; i < signal.length; i++) {
     if (currentBuffer.length > 14) {
         currentBuffer.shift();
         const bufferSet = new Set(currentBuffer);
-        console.log(bufferSet)
         if (bufferSet.size === currentBuffer.length) {
             console.log(i + 1)
             break;
